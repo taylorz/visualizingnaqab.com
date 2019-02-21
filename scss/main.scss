@@ -8,7 +8,8 @@ body {
      .container-fluid {
        padding: 0; margin: 0;
        section {
-         height: 90vh;
+         min-height: 90vh;
+         height: 100%;
          width: 100vw;
          background: $neutralBackgroundColor;
          padding: $buffer*2;
@@ -18,11 +19,20 @@ body {
            opacity: 1;
          }
          .row {
-           opacity: 0;
+           // opacity: 0;
          }
          &#villages {
-           background: url("../assets/tests/template-01.png");
-           background-size: cover;
+           margin-top: -$offsetPeek;
+           // background: url("../assets/tests/test.png");
+           // background-size: cover;
+           // background-repeat: no-repeat;
+           .oneImage-container {
+             .imageTest {
+               img {
+                 width: 100%;
+               }
+             }
+           }
          }
        }
      }
