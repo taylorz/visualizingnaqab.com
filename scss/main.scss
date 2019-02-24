@@ -3,37 +3,64 @@
 @import "bootstrap-overrides.scss";
 
 body {
+  color: $primaryFontColor;
+  font-family: $primaryFontFamily;
   .page-container {
     padding: 0; margin: 0;
+    nav {
+      height: $navbarHeight;
+      font-family: $secondaryFontFamily;
+      background: $neutralBackgroundColor;
+      display: flex;
+      margin: 0; padding: 0;
+      div.navbar-collapse {
+        justify-content: center;
+        .navbar-nav {
+          width: 100vw;
+        }
+      }
+    }
      .container-fluid {
        padding: 0; margin: 0;
        section {
-         min-height: 90vh;
          height: 100%;
          width: 100vw;
          background: $neutralBackgroundColor;
-         padding: $buffer*2;
          font-size: $primaryFontSize;
+         .sub-section {
+           padding: $buffer*4;
+           @include breakpoint(sm) {
+             padding: $buffer*2;
+           }
+         }
          .hero-container {
+           padding-top: $navbarHeight*2;
+           height: 95vh;
+           position: relative;
            font-size: $heroFontSize;
-           opacity: 1;
-         }
-         .row {
-           // opacity: 0;
-         }
-         &#villages {
-           margin-top: -$offsetPeek;
-           // background: url("../assets/tests/test.png");
-           // background-size: cover;
-           // background-repeat: no-repeat;
-           .oneImage-container {
-             .imageTest {
-               img {
-                 width: 100%;
-               }
+           color: $heroFontColor;
+           background-color: $heroColor;
+           .hero-top {
+             .hero-title {
+               font-weight: 800;
+             }
+           }
+           .hero-bottom {
+             position: absolute;
+             bottom: 0;
+             width: 80vw;
+             padding-bottom: $buffer*2;
+             .hero-statement {
+               font-size: $primaryFontSize;
+               font-weight: 100;
              }
            }
          }
+         &#intro {}
+         &#historical {}
+         &#deprivation {}
+         &#acts {}
+         &#stayUpdated {}
        }
      }
   }

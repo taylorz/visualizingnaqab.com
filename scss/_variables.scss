@@ -1,11 +1,24 @@
 $buffer:                            25px;
 
-$primaryFontFamily:                 "Roboto", sans-serif;
-$primaryFontSize:                   22px;
+$navbarHeight:                      $buffer*4;
 
-$heroFontSize:                      $primaryFontSize*2;
+$primaryFontFamily:                 "Oswald", sans-serif;
+$primaryFontSize:                   22px;
+$primaryFontColor:                  #222222;
+
+$secondaryFontFamily:               "Inconsolata", sans-serif;
+$secondaryFontSize:                 $primaryFontSize*.75;
+
+$heroFontSize:                      $primaryFontSize*3;
+$heroFontColor:                      #222222;
 
 $neutralBackgroundColor:            #f5f5f5;
+$heroColor:                         #ffffff;
+
+$villages:                          #FF3366;
+$towns:                             #cc0066;
+$recognition:                       #ffcc33;
+$israeli:                           #0033cc;
 
 $animationDurationLong:             .75s;
 $animationDurationMiddle:           .50s;
