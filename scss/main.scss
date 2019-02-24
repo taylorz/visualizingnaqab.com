@@ -13,6 +13,11 @@ body {
       background: $neutralBackgroundColor;
       display: flex;
       margin: 0; padding: 0;
+      @include transition;
+      &.hidden {
+        @include transition;
+        margin-top: -$navbarHeight+$buffer;
+      }
       div.navbar-collapse {
         justify-content: center;
         .navbar-nav {
