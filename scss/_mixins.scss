@@ -52,6 +52,13 @@
 [data-aos="worksFade"] {
   // opacity: 0;
   &.aos-animate {
-    @include animation($animationDurationMiddle, 0s, easeUp);
+    @include animation($animationDurationLong, 0s, easeUp);
+  }
+}
+
+[data-aos="worksFadeSecond"] {
+  // opacity: 0;
+  &.aos-animate {
+    @include animation($animationDurationLong, $animationDelayOne, easeUp);
   }
 }
