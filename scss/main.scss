@@ -20,6 +20,10 @@ body {
         @include transition;
         margin-top: -$navbarHeight;
       }
+      &.shown-scrolling {
+        @include transition;
+        margin-top: 0;
+      }
       div.navbar-collapse {
         justify-content: center;
         .navbar-nav {
