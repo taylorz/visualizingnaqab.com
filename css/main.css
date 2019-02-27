@@ -61,12 +61,13 @@ body {
         background: #f5f5f5;
         font-size: 22px; }
         body .page-container .container-fluid section .sub-section {
-          padding: 75px; }
+          padding: 75px;
+          background: #00000a; }
           @media (max-width: 768px) {
             body .page-container .container-fluid section .sub-section {
               padding: 50px; } }
         body .page-container .container-fluid section .hero-container {
-          height: 100vh;
+          height: 80vh;
           position: relative;
           font-size: 110px;
           color: #fafafa;
@@ -79,11 +80,48 @@ body {
             position: absolute;
             bottom: 0;
             width: 90vw;
-            padding-bottom: 50px; }
+            padding-bottom: 75px; }
             body .page-container .container-fluid section .hero-container .hero-bottom .hero-statement {
               font-size: 22px;
               font-weight: 100; }
         body .page-container .container-fluid section#intro .hero-container {
-          padding-top: 200px; }
+          padding-top: 200px;
+          height: 90vh; }
+        body .page-container .container-fluid section#intro .big-map {
+          background-image: url("../assets/01_intro/whole_map_comp.jpg");
+          background-size: cover;
+          background-position: bottom;
+          height: 300vh; }
+          body .page-container .container-fluid section#intro .big-map img {
+            width: 100%; }
+        body .page-container .container-fluid section#historical .row {
+          opacity: 0; }
+        body .page-container .container-fluid section#historical .imagegrid-container {
+          background-color: #00000a; }
+          body .page-container .container-fluid section#historical .imagegrid-container .anno {
+            width: 100%; }
+            body .page-container .container-fluid section#historical .imagegrid-container .anno .caption {
+              float: left;
+              font-family: "Inconsolata", sans-serif;
+              color: #999999;
+              font-size: 14.66667px;
+              margin-top: 25px;
+              margin-bottom: 25px; }
+              body .page-container .container-fluid section#historical .imagegrid-container .anno .caption span {
+                color: #66666a; }
+            body .page-container .container-fluid section#historical .imagegrid-container .anno .icon {
+              position: absolute;
+              right: 0;
+              margin-top: 25px; }
+              body .page-container .container-fluid section#historical .imagegrid-container .anno .icon img {
+                width: 40px; }
+          body .page-container .container-fluid section#historical .imagegrid-container img {
+            width: 100%; }
+          body .page-container .container-fluid section#historical .imagegrid-container .imagegrid-title {
+            margin-top: 25px;
+            color: #fafafa;
+            margin-bottom: 25px; }
+        body .page-container .container-fluid section#deprivation .sub-section.hero-container {
+          padding: 75px; }
         body .page-container .container-fluid section#deprivation .sub-section .bigImage img {
           width: 100%; }

@@ -42,12 +42,13 @@ body {
          font-size: $primaryFontSize;
          .sub-section {
            padding: $buffer*3;
+           background: $navBackgroundColor;
            @include breakpoint(sm) {
              padding: $buffer*2;
            }
          }
          .hero-container {
-           height: 100vh;
+           height: 80vh;
            position: relative;
            font-size: $heroFontSize;
            color: $heroFontColor;
@@ -64,7 +65,7 @@ body {
              position: absolute;
              bottom: 0;
              width: 90vw;
-             padding-bottom: $buffer*2;
+             padding-bottom: $buffer*3;
              .hero-statement {
                font-size: $primaryFontSize;
                font-weight: 100;
@@ -74,11 +75,77 @@ body {
          &#intro {
            .hero-container {
              padding-top: $navbarHeight*2;
+             height: 90vh;
+           }
+           .big-map {
+             background-image: url('../assets/01_intro/whole_map_comp.jpg');
+             background-size: cover;
+             background-position: bottom;
+             height: 300vh;
+             img {
+               width: 100%;
+               // max-width: 100%;
+             }
            }
          }
-         &#historical {}
+         &#historical {
+           .row {
+             opacity: 0;
+           }
+           .imagegrid-container {
+             background-color: $navBackgroundColor;
+             // padding: 0;
+             .anno {
+               width: 100%;
+               .caption {
+                 float: left;
+                 font-family: $secondaryFontFamily;
+                 color: #999999;
+                 font-size: $primaryFontSize/1.5;
+                 margin-top: $buffer;
+                 margin-bottom: $buffer*1;
+                 span {
+                   color: $darkFontSecondary;
+                 }
+               }
+               .icon {
+                 position: absolute;
+                 right: 0;
+                 margin-top: $buffer;
+                 img {
+                   width: 40px;
+                 }
+               }
+             }
+             img {
+               width: 100%;
+             }
+             .imagegrid-title {
+               margin-top: $buffer;
+               color: $heroFontColor;
+               margin-bottom: $buffer;
+             }
+             .space-context {
+               // padding: $buffer*2 $buffer*3;
+               // background: $navBackgroundColor;
+               // padding-bottom: 0;
+               div {
+               }
+               &.israeli-context{
+                 // background: #00001a;
+               }
+               &.towns-context{
+                 // background: #00000a;
+               }
+               &.villages-context{}
+             }
+           }
+         }
          &#deprivation {
            .sub-section {
+             &.hero-container {
+               padding: $buffer*3;
+             }
              .bigImage {
                img {
                  width: 100%;
