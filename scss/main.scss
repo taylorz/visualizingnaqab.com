@@ -16,12 +16,12 @@ body {
       display: flex;
       margin: 0; padding: 0;
       a.nav-link {
+        @include transition;
         &.stayUpdated {
           background: $heroBackgroundColor;
           color: #44444a;
           padding: 15px;
           border-radius: 3px;
-          @include transition;
           display: inline;
           font-family: $primaryFontFamily;
           &:hover {
@@ -64,7 +64,7 @@ body {
            }
          }
          .hero-container {
-           height: 80vh;
+           height: 90vh;
            position: relative;
            font-size: $heroFontSize;
            color: $heroFontColor;
@@ -106,7 +106,7 @@ body {
          &#intro {
            .hero-container {
              padding-top: $navbarHeight*2;
-             height: 90vh;
+             height: 100vh;
            }
            .big-map {
              background-image: url('../assets/01_intro/whole_map_comp.jpg');
@@ -217,7 +217,7 @@ body {
              .bigImage {
                padding: $buffer*3;
                .diagramCaption {
-                 margin-top: $buffer*3;
+                 margin-bottom: $buffer*3;
                  font-family: $secondaryFontFamily;
                  font-size: $primaryFontSize/1.5;
                  color: $darkFontEmphasis;
