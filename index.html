@@ -13,7 +13,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Oswald:300,400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Oswald:300,400,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Condensed:400,400i,700" rel="stylesheet">
+
     <script type="text/javascript" src ="js/main.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.min.css"/>
   </head>
@@ -29,7 +31,7 @@
               <div class="col-md-2"><a class="nav-item nav-link" href="#historical">02<br>Historical Context</a></div>
               <div class="col-md-2"><a class="nav-item nav-link" href="#deprivation">03<br>Deprivation of Resources</a></div>
               <div class="col-md-2"><a class="nav-item nav-link" href="#acts">04<br>Acts of Hostility</a></div>
-              <div class="col-md-2 offset-md-2 text-right align-self-center"><a class="nav-item nav-link" href="#stayUpdated">Stay Updated</a></div>
+              <div class="col-md-2 offset-md-2 text-right align-self-center"><a class="nav-item nav-link stayUpdated" href="#stayUpdated">Contact</a></div>
           </div>
         </div>
       </nav>
@@ -78,6 +80,53 @@
             </div>
           </div><!--longtext-container-->
           <div class="sub-section imagegrid-container">
+            <div class="row legend" data-aos="worksFade">
+              <div class="col-md-1">
+                <div class="legendLabel">
+                  Legend
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <p class="icon"><img src="assets/02_historical/marker_israeli.svg" alt=""></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Israeli Affiliation
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <p class="icon"><img src="assets/02_historical/marker_bedouin_town.svg" alt=""></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Bedouin Town
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <p class="icon"><img src="assets/02_historical/marker_recognized.svg" alt=""></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Recognized Town
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <p class="icon"><img src="assets/02_historical/marker_unrecognized.svg" alt=""></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Unrecognized Town
+                </div>
+              </div>
+            </div><!--legend-->
             <div class="row imagegrid-title" data-aos="worksFade">
               <div class="col-md-6">
                 City
@@ -87,7 +136,7 @@
               <div class="col-md-4">
                 <img src="assets/02_historical/maps/israeli/beersheva.jpg" alt="">
                 <div class="anno">
-                  <p class="caption">Beersheva <br><span>Israeli City Center</span></p>
+                  <p class="caption">Be'er Sheva<br><span>Israeli City Center</span></p>
                   <p class="icon"><img src="assets/02_historical/marker_israeli.svg" alt=""></p>
                 </div>
               </div>
@@ -555,9 +604,88 @@
             </div><!--hero-bottom-->
           </div>
           <div class="sub-section">
-            <div class="row bigImage">
+            <!-- <div class="row bigImage">
               <div class="col-md-12">
-                <img src="assets/03_deprivation/diagram_nogrid-01.svg" alt="">
+                <img src="assets/03_deprivation/diagrams/diagram_nogrid-01.svg" alt="">
+              </div>
+            </div> -->
+            <div class="row legend">
+              <div class="col-md-1">
+                <div class="legendLabel">
+                  Legend
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <p class="icon"><img src="assets/02_historical/marker_bedouin_town.svg" alt=""></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Delivered
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <p class="icon"><img class="undelivered" src="assets/02_historical/marker_bedouin_town.svg" alt=""></p>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Undelivered
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <div class="legendLine water"></div>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Water
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  <div class="legendLine electricity"></div>
+                </div>
+              </div>
+              <div class="col-md-1">
+                <div class="legendText">
+                  Electricity
+                </div>
+              </div>
+            </div><!--legend-->
+            <div class="row bigImage imageLighter">
+              <div class="col-md-12">
+                <img src="assets/03_deprivation/diagrams/1_diagram_water_electricity.svg" alt="">
+              </div>
+              <div class="col-md-3 diagramCaption">
+                <p>This diagram shows how water and electricity are (not) delivered from the central city of Be'er Sheva to small recognized and unrecognized Bedouin towns.</p>
+              </div>
+            </div>
+            <div class="row bigImage imageDark">
+              <div class="col-md-12">
+                <img src="assets/03_deprivation/diagrams/2_diagram_education.svg" alt="">
+              </div>
+              <div class="col-md-3 diagramCaption">
+                <p>This diagram shows how educational resources are (not) delivered from the central city of Be'er Sheva to small recognized and unrecognized Bedouin towns.</p>
+              </div>
+            </div>
+            <div class="row bigImage imageLighter">
+              <div class="col-md-12">
+                <img src="assets/03_deprivation/diagrams/3_diagrams_medical.svg" alt="">
+              </div>
+              <div class="col-md-3 diagramCaption">
+                <p>This diagram shows how medical resources are (not) delivered from the central city of Be'er Sheva to small recognized and unrecognized Bedouin towns.</p>
+              </div>
+            </div>
+            <div class="row bigImage imageDark">
+              <div class="col-md-12">
+                <img src="assets/03_deprivation/diagrams/4_diagram_paved_roads.svg" alt="">
+              </div>
+              <div class="col-md-3 diagramCaption">
+                <p>This diagram shows how paved roads and infrastructural resources are (not) delivered from the central city of Be'er Sheva to small recognized and unrecognized Bedouin towns.</p>
               </div>
             </div>
           </div>
@@ -582,20 +710,14 @@
         </section><!--acts-->
         <section id="stayUpdated">
           <div class="sub-section hero-container">
-            <div class="hero-top">
-              <div class="row hero-title" data-aos="worksFade">
-                <div class="col-md-12">
-                  Stay Updated
+            <div class="hero-bottom">
+              <div class="row hero-statement" data-aos="worksFade">
+                <div class="col-md-6">
+                  <p>Contact Stella Ioannidou to disucss her research on this topic, or to express your further interest in Visualizing The Naqab.</p>
+                  <p>stella.ioan89@gmail.com</p>
                 </div>
               </div>
             </div><!--hero-top-->
-            <div class="hero-bottom">
-              <div class="row hero-statement" data-aos="worksFadeSecond" data-aos-anchor="#stayUpdated">
-                <div class="col-md-4">
-                  <!-- Visualizing The Naqab is a project that is about this and that. -->
-                </div>
-              </div>
-            </div><!--hero-bottom-->
           </div>
         </section><!--stayUpdated-->
       </div>

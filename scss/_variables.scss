@@ -2,7 +2,7 @@ $buffer:                            25px;
 
 $navbarHeight:                      $buffer*4;
 
-$primaryFontFamily:                 "Oswald", sans-serif;
+$primaryFontFamily:                 "Roboto Condensed", sans-serif;
 $primaryFontSize:                   22px;
 $primaryFontColor:                  #222222;
 
@@ -11,8 +11,9 @@ $secondaryFontSize:                 $primaryFontSize*.75;
 $secondaryFontColor:                #cccccc;
 
 $darkFontSecondary:                 #66666a;
+$darkFontEmphasis:                  #99999a;
 
-$heroFontSize:                      $primaryFontSize*5;
+$heroFontSize:                      $primaryFontSize*4;
 $heroFontColor:                     #fafafa;
 
 $neutralBackgroundColor:            #f5f5f5;

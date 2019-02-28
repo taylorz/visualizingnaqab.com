@@ -18,7 +18,7 @@
 body {
   color: #222222;
   background: #00000a;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Roboto Condensed", sans-serif; }
   body .page-container {
     overflow-x: hidden;
     padding: 0;
@@ -33,6 +33,24 @@ body {
       -moz-transition: all 0.25s ease-in-out;
       -o-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out; }
+      body .page-container nav a.nav-link.stayUpdated {
+        background: #11111a;
+        color: #44444a;
+        padding: 15px;
+        border-radius: 3px;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        display: inline;
+        font-family: "Roboto Condensed", sans-serif; }
+        body .page-container nav a.nav-link.stayUpdated:hover {
+          background: #f5f5f5;
+          color: #11111a;
+          -webkit-transition: all 0.25s ease-in-out;
+          -moz-transition: all 0.25s ease-in-out;
+          -o-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out; }
       body .page-container nav.hidden {
         -webkit-transition: all 0.25s ease-in-out;
         -moz-transition: all 0.25s ease-in-out;
@@ -69,13 +87,11 @@ body {
         body .page-container .container-fluid section .hero-container {
           height: 80vh;
           position: relative;
-          font-size: 110px;
+          font-size: 88px;
           color: #fafafa;
           background-color: #11111a; }
           body .page-container .container-fluid section .hero-container .row {
             opacity: 0; }
-          body .page-container .container-fluid section .hero-container .hero-top .hero-title {
-            font-weight: 800; }
           body .page-container .container-fluid section .hero-container .hero-bottom {
             position: absolute;
             bottom: 0;
@@ -83,7 +99,18 @@ body {
             padding-bottom: 75px; }
             body .page-container .container-fluid section .hero-container .hero-bottom .hero-statement {
               font-size: 22px;
-              font-weight: 100; }
+              font-weight: 300; }
+        body .page-container .container-fluid section .legend {
+          font-family: "Inconsolata", sans-serif;
+          font-size: 14.66667px; }
+          body .page-container .container-fluid section .legend .legendLabel {
+            color: #66666a; }
+          body .page-container .container-fluid section .legend .legendText {
+            color: #fafafa; }
+            body .page-container .container-fluid section .legend .legendText p.icon {
+              width: 40px;
+              float: right;
+              margin-top: -6px; }
         body .page-container .container-fluid section#intro .hero-container {
           padding-top: 200px;
           height: 90vh; }
@@ -103,7 +130,7 @@ body {
             body .page-container .container-fluid section#historical .imagegrid-container .anno .caption {
               float: left;
               font-family: "Inconsolata", sans-serif;
-              color: #999999;
+              color: #99999a;
               font-size: 14.66667px;
               margin-top: 25px;
               margin-bottom: 25px; }
@@ -121,7 +148,47 @@ body {
             margin-top: 25px;
             color: #fafafa;
             margin-bottom: 25px; }
-        body .page-container .container-fluid section#deprivation .sub-section.hero-container {
-          padding: 75px; }
-        body .page-container .container-fluid section#deprivation .sub-section .bigImage img {
-          width: 100%; }
+        body .page-container .container-fluid section#deprivation .sub-section {
+          padding: 0; }
+          body .page-container .container-fluid section#deprivation .sub-section .legend {
+            padding: 75px;
+            padding-bottom: 0;
+            background: #11111a;
+            font-family: "Inconsolata", sans-serif;
+            font-size: 14.66667px; }
+            body .page-container .container-fluid section#deprivation .sub-section .legend .legendLabel {
+              color: #66666a; }
+            body .page-container .container-fluid section#deprivation .sub-section .legend .legendText {
+              color: #fafafa; }
+              body .page-container .container-fluid section#deprivation .sub-section .legend .legendText .legendLine {
+                width: 40px;
+                height: 2px;
+                float: right;
+                margin-top: 10px; }
+                body .page-container .container-fluid section#deprivation .sub-section .legend .legendText .legendLine.water {
+                  background: #66CCFF; }
+                body .page-container .container-fluid section#deprivation .sub-section .legend .legendText .legendLine.electricity {
+                  background: #FF9900; }
+              body .page-container .container-fluid section#deprivation .sub-section .legend .legendText p.icon {
+                width: 40px;
+                float: right;
+                margin-top: -6px; }
+                body .page-container .container-fluid section#deprivation .sub-section .legend .legendText p.icon img {
+                  width: 40px; }
+                body .page-container .container-fluid section#deprivation .sub-section .legend .legendText p.icon .undelivered {
+                  opacity: .5; }
+          body .page-container .container-fluid section#deprivation .sub-section.hero-container {
+            padding: 75px; }
+          body .page-container .container-fluid section#deprivation .sub-section .bigImage {
+            padding: 75px; }
+            body .page-container .container-fluid section#deprivation .sub-section .bigImage .diagramCaption {
+              margin-top: 75px;
+              font-family: "Inconsolata", sans-serif;
+              font-size: 14.66667px;
+              color: #99999a; }
+            body .page-container .container-fluid section#deprivation .sub-section .bigImage.imageDark {
+              background: #00000a; }
+            body .page-container .container-fluid section#deprivation .sub-section .bigImage.imageLighter {
+              background: #11111a; }
+            body .page-container .container-fluid section#deprivation .sub-section .bigImage img {
+              width: 100%; }

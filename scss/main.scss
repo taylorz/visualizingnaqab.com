@@ -15,6 +15,22 @@ body {
       background: $navBackgroundColor;
       display: flex;
       margin: 0; padding: 0;
+      a.nav-link {
+        &.stayUpdated {
+          background: $heroBackgroundColor;
+          color: #44444a;
+          padding: 15px;
+          border-radius: 3px;
+          @include transition;
+          display: inline;
+          font-family: $primaryFontFamily;
+          &:hover {
+            background: $neutralBackgroundColor;
+            color: $heroBackgroundColor;
+            @include transition;
+          }
+        }
+      }
       @include transition;
       &.hidden {
         @include transition;
@@ -58,7 +74,7 @@ body {
            }
            .hero-top {
              .hero-title {
-               font-weight: 800;
+               // font-weight: 800;
              }
            }
            .hero-bottom {
@@ -68,10 +84,25 @@ body {
              padding-bottom: $buffer*3;
              .hero-statement {
                font-size: $primaryFontSize;
-               font-weight: 100;
+               font-weight: 300;
              }
            }
          }
+        .legend {
+           font-family: $secondaryFontFamily;
+           font-size: $primaryFontSize/1.5;
+           .legendLabel {
+             color: $darkFontSecondary;
+           }
+           .legendText {
+             color: $heroFontColor;
+             p.icon {
+               width: 40px;
+               float: right;
+               margin-top: -6px;
+             }
+           }
+         }//legend
          &#intro {
            .hero-container {
              padding-top: $navbarHeight*2;
@@ -100,7 +131,7 @@ body {
                .caption {
                  float: left;
                  font-family: $secondaryFontFamily;
-                 color: #999999;
+                 color: $darkFontEmphasis;
                  font-size: $primaryFontSize/1.5;
                  margin-top: $buffer;
                  margin-bottom: $buffer*1;
@@ -143,10 +174,60 @@ body {
          }
          &#deprivation {
            .sub-section {
+             padding: 0;
+             .legend {
+               padding: $buffer*3;
+               padding-bottom: 0;
+               background: $heroBackgroundColor;
+                font-family: $secondaryFontFamily;
+                font-size: $primaryFontSize/1.5;
+                .legendLabel {
+                  color: $darkFontSecondary;
+                }
+                .legendText {
+                  color: $heroFontColor;
+                  .legendLine {
+                    width: 40px;
+                    height: 2px;
+                    float:right;
+                    margin-top: 10px;
+                    &.water {
+                      background: #66CCFF;
+                    }
+                    &.electricity {
+                      background: #FF9900;
+                    }
+                  }
+                  p.icon {
+                    width: 40px;
+                    float: right;
+                    margin-top: -6px;
+                    img {
+                      width: 40px;
+                    }
+                    .undelivered {
+                      opacity: .5;
+                    }
+                  }
+                }
+              }//legend
              &.hero-container {
                padding: $buffer*3;
              }
              .bigImage {
+               padding: $buffer*3;
+               .diagramCaption {
+                 margin-top: $buffer*3;
+                 font-family: $secondaryFontFamily;
+                 font-size: $primaryFontSize/1.5;
+                 color: $darkFontEmphasis;
+               }
+               &.imageDark {
+                 background: $navBackgroundColor;
+               }
+               &.imageLighter {
+                 background: $heroBackgroundColor;
+               }
                img {
                  width: 100%;
                }
@@ -154,7 +235,11 @@ body {
            }
          }
          &#acts {}
-         &#stayUpdated {}
+         &#stayUpdated {
+           .hero-container {
+             // height: 100vh;
+           }
+         }
        }
      }
   }
