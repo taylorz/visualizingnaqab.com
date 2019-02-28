@@ -177,8 +177,9 @@ body {
              padding: 0;
              .legend {
                padding: $buffer*3;
-               padding-bottom: 0;
-               background: $heroBackgroundColor;
+               padding-left: 0;
+               padding-top: 0;
+               background: $navBackgroundColor;
                 font-family: $secondaryFontFamily;
                 font-size: $primaryFontSize/1.5;
                 .legendLabel {
@@ -217,7 +218,11 @@ body {
              .bigImage {
                padding: $buffer*3;
                .diagramCaption {
-                 margin-bottom: $buffer*3;
+                 text-align: left;
+                 position: absolute;
+                 left: 0;
+                 width: 15vw;
+                 margin-top: $buffer*3;
                  font-family: $secondaryFontFamily;
                  font-size: $primaryFontSize/1.5;
                  color: $darkFontEmphasis;
@@ -230,6 +235,8 @@ body {
                }
                img {
                  width: 100%;
+                 max-height: 100vh;
+
                }
              }
            }
@@ -237,7 +244,23 @@ body {
          &#acts {}
          &#stayUpdated {
            .hero-container {
-             // height: 100vh;
+             background: $navBackgroundColor;
+             a {
+               @include transition;
+               color: $heroFontColor;
+               text-decoration: none;
+               &:hover {
+                 @include transition;
+                 color: $darkFontEmphasis;
+                 text-decoration: none;
+               }
+             }
+             .site-credit {
+               margin-top: $buffer*3;
+               font-family: $secondaryFontFamily;
+               font-size: $primaryFontSize/1.5;
+               color: $darkFontEmphasis;
+             }
            }
          }
        }

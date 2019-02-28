@@ -153,8 +153,9 @@ body {
           padding: 0; }
           body .page-container .container-fluid section#deprivation .sub-section .legend {
             padding: 75px;
-            padding-bottom: 0;
-            background: #11111a;
+            padding-left: 0;
+            padding-top: 0;
+            background: #00000a;
             font-family: "Inconsolata", sans-serif;
             font-size: 14.66667px; }
             body .page-container .container-fluid section#deprivation .sub-section .legend .legendLabel {
@@ -183,7 +184,11 @@ body {
           body .page-container .container-fluid section#deprivation .sub-section .bigImage {
             padding: 75px; }
             body .page-container .container-fluid section#deprivation .sub-section .bigImage .diagramCaption {
-              margin-bottom: 75px;
+              text-align: left;
+              position: absolute;
+              left: 0;
+              width: 15vw;
+              margin-top: 75px;
               font-family: "Inconsolata", sans-serif;
               font-size: 14.66667px;
               color: #99999a; }
@@ -192,4 +197,26 @@ body {
             body .page-container .container-fluid section#deprivation .sub-section .bigImage.imageLighter {
               background: #11111a; }
             body .page-container .container-fluid section#deprivation .sub-section .bigImage img {
-              width: 100%; }
+              width: 100%;
+              max-height: 100vh; }
+        body .page-container .container-fluid section#stayUpdated .hero-container {
+          background: #00000a; }
+          body .page-container .container-fluid section#stayUpdated .hero-container a {
+            -webkit-transition: all 0.25s ease-in-out;
+            -moz-transition: all 0.25s ease-in-out;
+            -o-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+            color: #fafafa;
+            text-decoration: none; }
+            body .page-container .container-fluid section#stayUpdated .hero-container a:hover {
+              -webkit-transition: all 0.25s ease-in-out;
+              -moz-transition: all 0.25s ease-in-out;
+              -o-transition: all 0.25s ease-in-out;
+              transition: all 0.25s ease-in-out;
+              color: #99999a;
+              text-decoration: none; }
+          body .page-container .container-fluid section#stayUpdated .hero-container .site-credit {
+            margin-top: 75px;
+            font-family: "Inconsolata", sans-serif;
+            font-size: 14.66667px;
+            color: #99999a; }
