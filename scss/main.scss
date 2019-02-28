@@ -123,6 +123,11 @@ body {
            .row {
              opacity: 0;
            }
+           .longtext-container {
+             color: $heroFontColor;
+             font-size: $primaryFontSize/1.5;
+             background-color: $navBackgroundColor;
+           }
            .imagegrid-container {
              background-color: $navBackgroundColor;
              // padding: 0;
@@ -255,12 +260,26 @@ body {
                  text-decoration: none;
                }
              }
-             .site-credit {
-               margin-top: $buffer*3;
-               font-family: $secondaryFontFamily;
-               font-size: $primaryFontSize/1.5;
+           }
+         }
+         &#acknowledgements {
+           .hero-container {
+             a {
+               @include transition;
                color: $darkFontEmphasis;
+               text-decoration: none;
+               &:hover {
+                 @include transition;
+                 color: $heroFontColor;
+                 text-decoration: none;
+               }
              }
+           }
+           .site-credit {
+             margin-top: $buffer*3;
+             font-family: $secondaryFontFamily;
+             font-size: $primaryFontSize/1.5;
+             color: $darkFontEmphasis;
            }
          }
        }

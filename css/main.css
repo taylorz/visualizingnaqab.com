@@ -124,6 +124,10 @@ body {
             width: 100%; }
         body .page-container .container-fluid section#historical .row {
           opacity: 0; }
+        body .page-container .container-fluid section#historical .longtext-container {
+          color: #fafafa;
+          font-size: 14.66667px;
+          background-color: #00000a; }
         body .page-container .container-fluid section#historical .imagegrid-container {
           background-color: #00000a; }
           body .page-container .container-fluid section#historical .imagegrid-container .anno {
@@ -215,8 +219,22 @@ body {
               transition: all 0.25s ease-in-out;
               color: #99999a;
               text-decoration: none; }
-          body .page-container .container-fluid section#stayUpdated .hero-container .site-credit {
-            margin-top: 75px;
-            font-family: "Inconsolata", sans-serif;
-            font-size: 14.66667px;
-            color: #99999a; }
+        body .page-container .container-fluid section#acknowledgements .hero-container a {
+          -webkit-transition: all 0.25s ease-in-out;
+          -moz-transition: all 0.25s ease-in-out;
+          -o-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
+          color: #99999a;
+          text-decoration: none; }
+          body .page-container .container-fluid section#acknowledgements .hero-container a:hover {
+            -webkit-transition: all 0.25s ease-in-out;
+            -moz-transition: all 0.25s ease-in-out;
+            -o-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+            color: #fafafa;
+            text-decoration: none; }
+        body .page-container .container-fluid section#acknowledgements .site-credit {
+          margin-top: 75px;
+          font-family: "Inconsolata", sans-serif;
+          font-size: 14.66667px;
+          color: #99999a; }
